@@ -1,0 +1,219 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soltani Webby | CSS</title>
+    <link rel="stylesheet" href="../WEB DESIGN SCHOOL/css/style.css">
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="./img/background.mp4" type="video/mp4">
+      </video>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <a href="index.html"><h1><span class="highlight">Soltani</span> Webby</h1></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="html.html">HTML</a></li>
+                    <li class="current"><a href="css.html">CSS</a></li>
+                    <li><a href="js.html">JAVASCRIPT</a></li>
+                    <li><a href="examples.html" target="_blank">DEMO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <section id="newsletter">
+            <div class="container">
+                <h1>Subscribe To Our Newsletter</h1>
+                <form>
+                    <input type="email" placeholder="Enter Your Email">
+                    <button type="submit" class="button-1">
+                        subscribe
+                    </button>
+                </form>
+            </div>
+        </section>
+        <section id="main">
+            <div class="container">
+
+                <article id="sidebar">
+                    <img src="../WEB DESIGN SCHOOL/img/CSS.jpeg" alt="" width="100%">
+                    <p>Welcome to Soltani Webby's CSS section!</p>
+                    <p>Navigate through the essentials of CSS using the sidebar menu on the left.</p>
+                    <p>Explore topics such as 'Introduction to CSS', 'Inline Styles, Internal Stylesheets, and External Stylesheets', 'Selectors and Properties', 'Styling Text, Backgrounds, and Borders', and 'Box Model'.</p>
+                    <p>Each topic is designed to deepen your understanding of CSS and empower you to style and format web pages creatively. Let the sidebar be your roadmap as you journey through the fundamentals of CSS.</p>
+                    <p><b>Let's dive in and uncover the magic of web design together!</b></p>
+                </article>
+                <aside id="main-col">
+                    <div class="dark">
+                    <h3 onclick="whatIsCss()">What is CSS?</h3>
+                    <h3 onclick="styles()">Inline Styles, Internal Stylesheets, and External Stylesheets
+                    </h3>
+                    <h3 onclick="selectors()">Selectors and Properties</h3>
+                    <h3 onclick="styling()">Styling Text, Backgrounds, and Borders</h3>
+                    <h3 onclick="boxing()">Box Model</h3>
+                    
+                </div>
+                </aside>
+            </div>
+        </section>
+        <footer>
+            <p>
+                Soltani Webby, &copy; 2024 Mobina Soltani. All rights reserved. 
+                Unauthorized use or reproduction of materials from this website may result in legal action. 
+                Last updated: 2024
+                <br>
+                We are constantly working to make the website better and bigger. Thank you for your support!
+            </p>
+                </footer>
+        <script>
+            function whatIsCss(){
+                document.getElementById("sidebar").innerHTML=`
+                <h4><strong>What is CSS?</strong></h4>
+
+                <p>CSS, or Cascading Style Sheets, plays a pivotal role in web development by controlling the visual presentation of HTML elements.</p>
+                <p> It serves as the design language of the web, allowing developers to define how HTML content is displayed, formatted, and styled on a webpage. CSS enables developers to apply various styles such as colors, fonts, layouts, and spacing to HTML elements, ensuring consistent and visually appealing designs across different devices and screen sizes.</p>
+
+                <p>The importance of CSS in creating aesthetically pleasing and user-friendly websites cannot be overstated. By effectively styling HTML elements with CSS, developers can enhance the overall look and feel of a website, making it more attractive and engaging to visitors. </p>
+                <p>CSS enables developers to create visually cohesive designs, improve readability, and provide a seamless user experience. Additionally, CSS allows for the customization and branding of websites, helping businesses and organizations establish a unique online presence and effectively convey their message to their audience.</p>
+                <p> Overall, CSS plays a crucial role in shaping the visual identity of a website and contributes significantly to its success in attracting and retaining users.</p>
+                <img src="./img/cssex.png" alt="" width="750px">
+                    <img src="./img/CSSEX2.png" alt="" width="750px">`;
+            }
+            function styles(){
+                document.getElementById("sidebar").innerHTML=`
+                <h4><strong>Inline Styles, Internal Stylesheets, and External Stylesheets</strong></h4>
+                <ul>
+                <li><strong>Inline Styles:</strong>
+                    Inline styles are CSS styles applied directly within HTML tags using the 'style' attribute. This method allows developers to apply styles to individual HTML elements directly in the HTML markup. Inline styles take precedence over external and internal stylesheets.
+                    <br>Example:
+                    <br>
+                    <img src="./img/inline.png" alt="" width="850"><br>
+                    <strong>When to use:</strong>
+                    Inline styles are appropriate when applying styles to specific elements that require unique styling not used elsewhere on the page. They are useful for quick styling adjustments or for styling elements dynamically using JavaScript.
+                </li>    
+                <p>
+                <li><strong>Internal Stylesheets:</strong>
+                    Internal stylesheets are CSS styles defined within the <code>&lt;style&gt;</code> tag in the HTML <head> section. This method allows developers to define styles for multiple elements within the same HTML document.
+                    <br>Example:
+                    <br>
+                    <img src="./img/internal.png" alt="" width="650"><br>
+                    <strong>When to use:</strong>
+                    Internal stylesheets are suitable for small projects or pages where styles are specific to that particular document. They are also useful when external stylesheets are not practical, such as in emails or single-page applications.
+                </li>  
+                <p>
+                <li><strong>External Stylesheets:</strong>
+                    External stylesheets are CSS styles stored in separate .css files and linked to HTML documents using the <code>&lt;link&gt;</code> tag. This method allows developers to separate style from content, making it easier to maintain and update styles across multiple HTML pages.
+                    <br>Example:
+                    <br>
+                    <img src="./img/external.png" alt="" width="650"><br>
+                    <strong>When to use:</strong>
+                    External stylesheets are ideal for larger projects or websites with multiple pages. They promote maintainability, reusability, and consistency by allowing styles to be shared across multiple HTML pages. They also enable better organization of code, facilitate collaboration among developers, and improve website performance by leveraging browser caching.
+                </li>  
+                </ul>
+                `;
+            }
+            function selectors(){
+                document.getElementById("sidebar").innerHTML=`
+                <h4><strong>Selectors and Properties</strong></h4>
+                <p>CSS selectors are patterns used to select and style HTML elements on a web page, while properties define how selected elements should appear. By combining selectors and properties, developers can precisely control the visual presentation of HTML elements.</p>
+                <br>
+                <strong>Common Selectors:</strong>
+                <br>
+                <ol>
+                <li><strong>Tag Name Selectors:</strong> These selectors target HTML elements based on their tag names. For example, styling all <code>&lt;p&gt;</code> elements on a page.  
+                <br>
+                Example:
+                <br>
+                <img src="./img/pcss.png" alt="" width="550px">
+                <p>
+                <li><strong>Class Selectors:</strong>Class selectors target elements with specific class attributes. Classes are reusable and can be applied to multiple elements on a page.
+                <br>Example:<br>
+                <img src="./img/pcss2.png" alt="" width="550px">
+                <li><strong>ID Selectors:</strong>ID selectors target elements with unique ID attributes. IDs should be unique within a page and are often used for styling individual elements.
+                <br>
+                Example:
+                <br>
+                <img src="./img/pcss3.png" alt="" width="550px">
+                </ol>
+                <hr>
+                <strong>Common Properties:</strong>
+                <ol>
+                    <li><strong>Color:</strong> Defines the color of text content.
+                    <li><strong>Font-size:</strong> Sets the size of text.
+                    <li><strong>Margin:</strong> Controls the space around an element.
+                    <li><strong>Padding:</strong> Defines the space between the content and the element's border.
+                    <li><strong>Background-color:</strong> Specifies the background color of an element.
+                </ol>
+                <br>
+                <img src="./img/ill.png" alt="" width="800px">
+                <img src="./img/show.png" alt="" width="800px">
+                <p>
+                In this example, we use tag name, class, and ID selectors to target HTML elements (
+                div, p, span) and apply styling properties (color, font-size, margin, background-color) to them. The CSS selectors and properties work together to style the HTML elements according to the defined rules. This demonstrates how selectors and properties combine to achieve desired visual effects on web pages.
+                `;
+            }
+            function styling(){
+                document.getElementById("sidebar").innerHTML=`
+                <h4><strong>Styling Text, Backgrounds, and Borders</strong></h4>
+                <ol>
+                <li><strong>Styling Text Elements:</strong>
+                <ul>
+                    <li><h5>Font Properties: </h5>CSS provides properties to control various aspects of text, including font family ('font-family'), font size ('font-size'), and font weight ('font-weight'). For example, you can set the font family to Arial, font size to 16 pixels, and font weight to bold.
+                    <li><h5>Text Alignment: </h5>CSS allows you to align text horizontally using properties like 'text-align'. Common values include 'left', 'center', 'right', and 'justify'.
+                </ul>
+                </li>
+                <p>
+                <li><strong>Backgrounds:</strong>
+                <ul>
+                    <li><h5>Background Colors: </h5>You can set the background color of an element using the 'background-color' property. Specify the desired color value, such as a hexadecimal code, RGB value, or color name.
+                </ul>
+                <ul>
+                    <li><h5>Background Images: </h5>CSS allows you to use images as backgrounds using the 'background-image' property. You can specify the image URL, and additional properties like 'background-repeat' and 'background-size' control how the image is displayed and repeated.
+                </ul>
+                </li>
+                <p>
+                <li><strong>Borders:</strong>
+                    <ul>
+                        <li><h5>Border Properties: </h5>CSS offers properties to create borders around elements. These include 'border-color', ;, and 'border-width'. You can specify the color, style (such as solid, dashed, or dotted), and width of the border.
+                        <li><h5>Border Radius: </h5>Additionally, you can use the 'border-radius' property to create rounded borders, giving elements a more modern and polished appearance.
+                    </ul>
+                </li>
+                </ol>
+                <p>By leveraging these techniques, you can enhance the visual appeal and readability of your web pages, ensuring a cohesive and professional design.</p>
+                <p>Experiment with different combinations of text, backgrounds, and borders to achieve the desired aesthetic for your website.</p>
+                <img src="./img/ill2.png" alt="" width="800">
+                <img src="./img/ill2show.png" alt="" width="800">
+                
+                `;
+            }
+            function boxing(){
+                document.getElementById("sidebar").innerHTML=`
+                <h4><strong>Box Model</strong></h4>
+                <p>The box model is a fundamental concept in CSS that describes how elements are rendered on a web page as rectangular boxes with distinct components: content, padding, border, and margin.</p>
+                <ul>
+                <li><strong>Content Area: </strong>The content area is the innermost part of the box and contains the actual content of the element, such as text, images, or other media.
+                <li><strong>Padding: </strong>The padding is the space between the content area and the element's border. It provides internal spacing within the box, allowing you to create gaps between the content and the border.
+                <li><strong>Border: </strong>The border surrounds the padding and content area, defining the outer edge of the box. Borders can have different styles, colors, and widths, adding visual distinction to elements.
+                <li><strong>Margin: </strong>The margin is the space outside the border, creating separation between the element and its surrounding elements. Margins help control the spacing between elements on a web page and influence the overall layout.
+                <br><img src="./img/Content.png" alt="" width="500px">
+                </ul>
+                <p>
+                    By manipulating box model properties, you can control the spacing and layout of elements on a web page:
+                </p>
+                <ul>
+                <li>Adjusting the 'padding' property allows you to increase or decrease the space between the content area and the border.
+                <li>Modifying the 'property' enables you to change the style, color, and width of the border surrounding the element.
+                <li>Changing the 'margin' property allows you to control the space between the element and its neighboring elements, affecting the overall spacing and layout of the page.
+                </ul>
+                <p>Understanding and effectively utilizing the box model is essential for creating well-designed and visually appealing web layouts. By manipulating box model properties, you can achieve precise control over spacing, alignment, and visual presentation, resulting in a polished and professional-looking website.</p>
+                <img src="./img/BOX.png" alt="" width="750px">
+            <img src="./img/BOXX.png" alt="" width="750px">
+                `;
+            }
+        </script>
+</body>
+</html>
