@@ -1,0 +1,292 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soltani Webby | JavaScript</title>
+    <link rel="stylesheet" href="../WEB DESIGN SCHOOL/css/style.css">
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="./img/background.mp4" type="video/mp4">
+      </video>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <a href="index.html"><h1><span class="highlight">Soltani</span> Webby</h1></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="html.html">HTML</a></li>
+                    <li><a href="css.html">CSS</a></li>
+                    <li class="current"><a href="js.html">JAVASCRIPT</a></li>
+                    <li><a href="examples.html" target="_blank">DEMO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <section id="newsletter">
+            <div class="container">
+                <h1>Subscribe To Our Newsletter</h1>
+                <form>
+                    <input type="email" placeholder="Enter Your Email">
+                    <button type="submit" class="button-1">
+                        subscribe
+                    </button>
+                </form>
+            </div>
+        </section>
+        <section id="main">
+            <div class="container">
+
+                <article id="sidebar">
+                    <img src="../WEB DESIGN SCHOOL/img/js.jpg" alt="" width="100%">
+                    <p>Welcome to Soltani Webby's JavaScript section!</p>
+                    <p>Navigate through the essentials of JavaScript using the sidebar menu on the left.</p>
+                    <p>Explore topics such as 'What is JavaScript?', 'Adding Interactivity to Your Website', 'Variables, Data Types, and Operators', 'Control Structures: If Statements, Loops, and Functions', and 'DOM Manipulation: Accessing and Modifying HTML Elements'.
+                    </p>
+                    <p>Each topic is designed to deepen your understanding of JavaScript and empower you to add dynamic functionality and interactivity to web pages. Let the sidebar be your roadmap as you journey through the fundamentals of JavaScript.
+                    </p>
+                    <p><b>Let's dive in and uncover the magic of web design together!</b></p>
+                </article>
+                <aside id="main-col">
+                    <div class="dark">
+                    <h3 onclick="whatIsJs()">What is JavaScript?</h3>
+                    <h3 onclick="interactivity()">Adding Interactivity to Your Website</h3>
+                    <h3 onclick="variables()">Variables, Data Types, and Operators
+                    </h3>
+                    <h3 onclick="structures()">Control Structures: If Statements, Loops, and Functions</h3>
+                    <h3 onclick="DOM()">DOM Manipulation: Accessing and Modifying HTML Elements</h3>
+                    <h3 onclick="challenges()">Interactive Coding Challenges to Solidify JavaScript Skills</h3>
+                    
+                </div>
+                </aside>
+            </div>
+        </section>
+        <footer>
+            <p>
+                Soltani Webby, &copy; 2024 Mobina Soltani. All rights reserved. 
+                Unauthorized use or reproduction of materials from this website may result in legal action. 
+                Last updated: 2024
+                <br>
+                We are constantly working to make the website better and bigger. Thank you for your support!
+            </p>
+                </footer>
+        <script>
+            function whatIsJs(){
+                document.getElementById("sidebar").innerHTML=`
+                <h4><strong>What is JavaScript?</h4></strong>
+                <p>JavaScript is a versatile programming language used for adding interactivity to web pages. </p>
+                <p>Unlike HTML and CSS, which primarily focus on defining the structure and presentation of web content, JavaScript enables developers to create dynamic and interactive features that enhance the user experience.</p>
+                <p>One of JavaScript's key roles is enabling dynamic content, allowing web pages to respond to user input, events, and actions in real-time. </p>
+                <p>This interactivity opens up endless possibilities for creating engaging web applications, interactive forms, animations, and more.</p>
+                <p>JavaScript plays a crucial role in enhancing user experience by enabling features such as form validation, dynamic page updates without reloading, interactive maps, sliders, and animations.</p>
+                <p>Its ability to manipulate the Document Object Model (DOM) allows developers to dynamically access and modify HTML elements, enabling the creation of dynamic and responsive user interfaces.</p>
+                <p>In summary, JavaScript empowers developers to create dynamic, interactive, and user-friendly web experiences, making it an essential tool for modern web development.</p>
+                <img src="./img/jsill.png" alt="" width="750">
+                <img src="./img/jsillshow1.png" alt="" width="750">
+                <img src="./img/jsillshow2.png" alt="" width="750">
+                
+                `;
+            }
+            function interactivity(){
+                document.getElementById("sidebar").innerHTML=`
+                <h4><strong>Adding Interactivity to Your Website</h4></strong>
+                <p>JavaScript empowers developers to create interactive web elements, enhancing user engagement and experience. </p>
+                <p>Here are some examples of how JavaScript enables interaction with various web elements:</p>
+                <ol>
+                <li><strong>Buttons: </strong>
+                <p>JavaScript can add functionality to buttons, enabling actions such as submitting forms, triggering animations, or displaying dynamic content when clicked.</p>
+                <p>JavaScript can add event listeners to buttons to trigger actions when clicked. For example, clicking a "Submit" button can validate form inputs or submit form data to a server.
+                <img src="./img/jsillbut.png" alt="" width="750px">
+                </p>
+
+                <li><strong>Forms: </strong>
+                <p>JavaScript can validate form inputs in real-time, providing instant feedback to users and preventing submission errors. It can also dynamically update form fields based on user selections or input.
+                <p>
+                JavaScript can validate form inputs by listening for form submission events and checking input values against predefined criteria. It can display error messages or prevent form submission if validation fails.
+                <img src="./img/jsillform.png" alt="" width="750px">
+                </p>
+                
+                <li><strong>Navigation Menus: </strong>
+                <p>JavaScript can create interactive navigation menus that expand or collapse submenus, highlight active links, or dynamically load content without reloading the entire page.
+                <p>
+                JavaScript can create interactive navigation menus by toggling CSS classes or manipulating the DOM. For example, clicking on a menu icon can reveal a dropdown menu or toggle visibility of navigation links.
+                <img src="./img/jsillfnavmenu.png" alt="" width="750px">
+                </p>
+                </ol>
+                <p>Examples of interactive elements powered by JavaScript include:</p>
+                <ul>
+                    <li><strong>Dropdown Menus: </strong>
+                    <p>JavaScript can create dropdown menus that appear when users hover or click on a menu item, providing additional navigation options.</p>
+                    <p>JavaScript can toggle the visibility of dropdown menus when users interact with menu items. For example, hovering over a menu item can reveal a dropdown menu containing additional options.
+                    <img src="./img/jsilldropdown.png" alt="" width="750px"></p>
+                    <li><strong>Image Sliders:</strong>
+                    <p>JavaScript can implement image sliders or carousels that automatically cycle through images or allow users to navigate through slides using navigation buttons.</p>
+                    <p>JavaScript can create image sliders or carousels that cycle through a series of images automatically or in response to user interactions. It can update the displayed image and navigation buttons accordingly.
+                    <img src="./img/jsillslide.png" alt="" width="750px">
+                    </p>
+                    <li><strong>Form Validation:</strong>
+                    <p>JavaScript can validate form inputs, ensuring that users enter valid data before submission. It can validate email addresses, passwords, and other input fields in real-time, providing error messages when necessary.</p>
+                    <p>JavaScript can validate form inputs in real-time by listening for input events or form submission events. It can check input values against predefined criteria and provide feedback to users.
+                    <img src="./img/jsillvalid.png" alt="" width="750px">
+                    </p>
+                </ul>
+                `;
+            }
+            function variables(){
+                document.getElementById("sidebar").innerHTML=`
+                <h4><strong>Variables, Data Types, and Operators</strong></h4>
+                <p>JavaScript utilizes variables to store and manipulate data efficiently. Here's a breakdown of each aspect:</p>
+                <ol>
+                    <li><strong>Concept of Variables:</strong>
+                    <ul>
+                    <li>Variables are containers for storing data values. They enable developers to refer to values by symbolic names.
+                    <li>In JavaScript, variables are declared using the 'var', 'let', or 'const' keywords. The 'var' keyword is used for declaring variables with global or function scope, while 'let' and 'const' are block-scoped.
+                    <li>
+                        For example:
+                        <br>
+                        <img src="./img/jsillvar.png" alt="" width="400px">
+                    </ul>
+                    <li><strong>Data Types in JavaScript:</strong>
+                    <ul>
+                        <li>JavaScript supports various data types:
+                        <ul>
+                            <li><strong>Numbers:</strong> Represent numeric values, including integers and floating-point numbers.
+                            <li><strong>Strings:</strong> Represent sequences of characters enclosed within single or double quotes.
+                            <li><strong>Booleans:</strong> Represent logical values 'true' or 'false'.
+                            <li><strong>Arrays:</strong> Ordered collections of values, accessible by index.
+                            <li><strong>Objects:</strong> Collections of key-value pairs, allowing for structured data representation.
+                        </ul> 
+                            <li>
+                        For example:
+                        <br>
+                        <img src="./img/jsilldata.png" alt="" width="400px">
+                    </ul>
+                    <li><strong>Basic Operators:</strong>
+                        <br>
+                    <ul>
+                    <li><strong>Arithmetic Operators:</strong>Perform arithmetic operations such as addition (+), subtraction (-), multiplication (*), division (/), and modulus (%).
+                    <li><strong>Assignment Operators: </strong>Assign values to variables using operators such as =, +=, -=, *=, and /=.
+                    <li><strong>Comparison Operators: </strong>Compare values and return true or false, including ==, ===, !=, !==, >, <, >=, and <=.
+                    <li><strong>Logical Operators: </strong>Combine multiple conditions and return a boolean result, including && (AND), || (OR), and ! (NOT).
+                    <li>For example:
+                    <br>
+                    <img src="./img/jsillop.png" alt="" width="400px">
+                    </ul>
+                </ol>
+                <p>Understanding variables, data types, and operators is fundamental in JavaScript programming as they form the building blocks for data manipulation and control flow in applications.</p>
+                `;
+            }
+            function structures(){
+                document.getElementById("sidebar").innerHTML=`
+                <h4><strong>Control Structures: If Statements, Loops, and Functions</strong></h4>
+                <p>Control structures in JavaScript enable developers to manage the flow of execution and organize code efficiently. Here's an overview of each component:</p>
+                <ol>
+                    <li><strong>If Statements:</strong>
+                    <ul>
+                    <li>If statements provide conditional execution of code based on specified conditions.
+                    <li>They evaluate an expression inside the parentheses and execute the block of code inside the curly braces if the condition is true.
+                    <li>Optionally, else if and else clauses can be used to provide alternative execution paths.
+                    <li>
+                        For example:
+                        <br>
+                        <img src="./img/jsillif.png" alt="" width="550">
+                    </ul>
+                    <li><strong>Loops:</strong>
+                        <ul>
+                            <li>Loops allow for repetitive execution of code blocks. The most common types are for loops and while loops.
+                            <li>For loops iterate over a range of values, executing a block of code for each iteration.
+                            <li>While loops execute a block of code repeatedly as long as a specified condition is true.
+                            <li>They are often used for iterating over arrays or objects, processing each element or property.
+                            <li>
+                        For example:
+                        <br>
+                        <img src="./img/jsillloop.png" alt="" width="550">
+                    </ul>
+                    <li><strong>Functions:</strong>
+                        <br>
+                    <ul>
+                    <li>Functions are reusable blocks of code that perform a specific task or calculation.
+                    <li>They encapsulate functionality, allowing code to be organized, modular, and easily reusable.
+                    <li>Functions can accept parameters as inputs and return values as outputs.
+                    <li>They can be declared using the function keyword and invoked by name.
+                    <li>For example:
+                    <br>
+                    <img src="./img/jsillfunc.png" alt="" width="550">
+                    </ul>
+                </ol>
+                <p>Understanding control structures like if statements, loops, and functions is essential for writing efficient and organized JavaScript code. They provide the foundation for implementing complex logic, iterating over data, and modularizing code into reusable components.</p>
+                `;
+            }
+            function DOM(){
+                document.getElementById("sidebar").innerHTML=`
+                <h4><strong>DOM Manipulation: Accessing and Modifying HTML Elements</strong></h4>
+                <p>The Document Object Model (DOM) represents the structure of an HTML document as a tree of objects, where each element in the HTML document is a node in the tree.</p>
+                <p>JavaScript can interact with these nodes to dynamically access and modify HTML elements, attributes, and content. Here's an overview of DOM manipulation:</p>
+                <ol>
+                    <li><strong>Document Object Model (DOM):</strong>
+                    <ul>
+                    <li>The DOM represents the HTML document as a hierarchical tree structure, with each element, attribute, and text node represented as an object.
+                    <li>JavaScript can traverse and manipulate this tree structure, allowing dynamic interaction with the content of the web page.
+                    <li>
+                        For example:
+                        <br>
+                        <img src="./img/jsilldom.png" alt="" width="700">
+                        </ul>
+                        <li><strong>Accessing and Modifying HTML Elements:</strong><ul>
+                            <li>JavaScript provides methods to access and modify HTML elements dynamically. These methods include getElementById, getElementsByClassName, querySelector, and querySelectorAll.
+                            <li>Once an element is accessed, its properties (such as innerHTML, textContent, value) can be modified to change its content or attributes (such as className, style) to change its appearance.
+                            <li>
+                        For example:
+                        <br>
+                        <img src="./img/jsilldom2.png" alt="" width="700">
+                        </ul>
+                    <li><strong>DOM Manipulation Techniques:</strong>
+                    <ul>
+                    <li>Selecting Elements: Use methods like getElementById, getElementsByClassName, querySelector, and querySelectorAll to select specific elements.
+                    <li>Changing Text or Styles: Modify innerHTML, textContent, className, style, or other properties to change the content or appearance of elements.
+                    <li>Handling Events: Attach event listeners to elements to respond to user interactions such as clicks, keypresses, or mouse movements.
+                    <li>For example:
+                    <br>
+                    <img src="./img/jsilldom3.png" alt="" width="700">
+                    </ul>
+                </ol>
+                <p>DOM manipulation is a powerful feature of JavaScript that enables dynamic and interactive web page creation. By accessing and modifying HTML elements, developers can create rich user experiences and responsive web applications.</p>
+                `;
+            }
+            function challenges(){
+                document.getElementById("sidebar").innerHTML=`
+                <ul><li><strong>DOM Manipulation:</strong>
+                <ol>
+                    <li>Create a simple webpage with a button and a paragraph element. Use JavaScript to change the text of the paragraph when the button is clicked. Additionally, use an if statement to toggle the text between two different messages.
+                    <li>Build a form with input fields for name and email. Use JavaScript to validate the form by ensuring both fields are filled out before submission. Display an error message if the fields are empty.
+                    <li>Implement a "dark mode" toggle button that changes the background color of the webpage when clicked. Use an if statement to toggle between light and dark modes.
+                </ol>
+                <li><strong>Variables and Data Types:</strong>
+                <ol>
+                <li>Write JavaScript code to calculate the area of a rectangle given its length and width. Use variables to store the length, width, and result of the calculation. Display the result using console.log().
+                <li>Create a program that converts temperatures between Celsius and Fahrenheit. Prompt the user for input and store the temperature values in variables. Use an if statement to determine the conversion formula based on user input.
+                <li>Define an array containing names of fruits. Use variables and a for loop to iterate over the array and display each fruit name in the console.
+                </ol>
+                <li><strong>Functions:</strong>
+                <ol>
+                    <li>Write a JavaScript function that takes two numbers as parameters and returns their sum. Call the function with different arguments to test its functionality.
+                    <li>Implement a function that takes a string as input and returns the reversed version of the string. Test the function with various input strings.
+                    <li>Create a function that generates a random number between a specified minimum and maximum value. Use this function in conjunction with a loop to generate and display a series of random numbers.
+                </ol>
+                <li><strong>Interactivity:</strong>
+                <ol>
+                    <li>Develop a simple quiz game where users answer multiple-choice questions. Use JavaScript to track their score and display the results at the end. Utilize loops to iterate over the questions and if statements to check the correctness of answers.
+                    <li>Build a slideshow gallery with navigation buttons (previous, next) to cycle through a collection of images. Use JavaScript to handle the interactivity. Implement a loop to iterate over the images and if statements to handle navigation.
+                    <li>Design a countdown timer that starts when the webpage loads and displays the remaining time. Allow users to pause and resume the timer using buttons. Utilize loops to update the timer and if statements to handle pausing/resuming functionality.
+                </ol>
+                </ul>
+                <p>These exercises combine the use of if statements, loops, variables, data types, functions, and DOM manipulation to provide comprehensive practice opportunities for learners. </p>
+                <p>They cover a range of scenarios and encourage learners to think critically and creatively while applying JavaScript concepts.</p>
+                `;
+            };
+        </script>
+        
+</body>
+</html>
