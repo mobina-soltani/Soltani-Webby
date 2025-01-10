@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Example</title>
+    <style>
+        /* Styling text */
+        body {
+            background-color: #ccc;
+            margin-top: 50px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #333;
+        }
+
+        /* Setting background */
+        .container {
+            background-color: #f4f4f4 0.1;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Creating borders */
+        .box {
+            border: 2px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="background-color: #f4f4f4;" id="welcomeTitle">Welcome to Your Website</h1>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <p style="background-color: #f4f4f4;">Let's design your website as you favor!</p>
+        <div class="box" style="background-color: white";>
+            <p>Pick a color for this box.</p>
+            <input type="text" class="color-input" placeholder="Enter color name">
+        </div>
+        <div class="box" style="background-color: #ffa07a; border-color: darkgoldenrod;">
+            <p>And this one.</p>
+            <input type="text" class="color-input" placeholder="Enter color name">
+        </div>
+        <div class="box" style="border-color: #00bfff; background-color: lightgreen;">
+            <p>How about your third favorite color?</p>
+            <input type="text" class="color-input" placeholder="Enter color name">
+        </div>
+        <div class="box" style="border-color: palevioletred; background-color: skyblue;">
+            <p>Let's set your favorite movie's image as the background!</p>
+            <p style="font-size: smaller;">choose from one of the movie names below:</p>
+            <button onclick="howl()">Howl's Moving Castle</button>
+            <button onclick="str()">Star Wars</button>
+            <button onclick="intr()">Interstellar</button>
+            <button onclick="goa()">Game of Thrones</button>
+            <button onclick="suzu()">Your Name</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const colorInputs = document.querySelectorAll('.color-input');
+            colorInputs.forEach(function(input) {
+                input.addEventListener('change', function() {
+                    const box = this.parentElement;
+                    const color = this.value.trim();
+                    if (color) {
+                        box.style.backgroundColor = color;
+                    } else {
+                        box.style.backgroundColor = '';
+                    }
+                });
+            });
+        });
+        const nameInput = document.getElementById('nameInput');
+            nameInput.addEventListener('input', function() {
+                const welcomeTitle = document.getElementById('welcomeTitle');
+                welcomeTitle.textContent = `Welcome to Your Website, ${this.value || 'Guest'}`;
+            });
+        function howl(){
+            document.body.style.backgroundImage = 'url("./img/howl.avif")';
+            p.style.backgroundColor = 'white';
+        }
+        function str(){
+            document.body.style.backgroundImage = 'url("./img/starwars.avif")';
+            p.style.backgroundColor = 'white';
+        }
+        function intr(){
+            document.body.style.backgroundImage = 'url("./img/intrs.jpeg")';
+            document.body.style.backgroundRepeat = 'no-repeat';
+            document.body.style.backgroundSize = 'cover';
+        }
+        function goa(){
+            document.body.style.backgroundImage = 'url("./img/GOA.webp")';
+            document.body.style.backgroundRepeat = 'no-repeat';
+            document.body.style.backgroundSize = 'cover';
+        }
+        function suzu(){
+            document.body.style.backgroundImage = 'url("./img/suzume.jpeg")';
+            document.body.style.backgroundRepeat = 'no-repeat';
+            document.body.style.backgroundSize = 'cover';
+        }
+    </script>
+</body>
+</html>
