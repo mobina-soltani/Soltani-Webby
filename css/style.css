@@ -103,7 +103,7 @@ ul a:hover{
 /* showcase */
 #showcase{
     min-height: 400px;
-    background: url(../img/showcase2.jpg) no-repeat;
+    background: url(img/showcase2.jpg) no-repeat;
     background-size: 1950px;
     background-attachment: fixed;
     background-position: center;
