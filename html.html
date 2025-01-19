@@ -1,76 +1,92 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soltani Webby | HTML</title>
-    <link rel="stylesheet" href="../WEB DESIGN SCHOOL/css/style.css">
-</head>
-<body>
-    <video autoplay muted loop id="myVideo">
-        <source src="./img/background.mp4" type="video/mp4">
-      </video>
-    <header>
-        <div class="container">
-            <div id="branding">
-                <a href="index.html"><h1><span class="highlight">Soltani</span> Webby</h1></a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li class="current"><a href="html.html">HTML</a></li>
-                    <li><a href="css.html">CSS</a></li>
-                    <li><a href="js.html">JAVASCRIPT</a></li>
-                    <li><a href="examples.html" target="_blank">DEMO</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-        <section id="newsletter">
-            <div class="container">
-                <h1>Subscribe To Our Newsletter</h1>
-                <form>
-                    <input type="email" placeholder="Enter Your Email">
-                    <button type="submit" class="button-1">
-                        subscribe
-                    </button>
-                </form>
-            </div>
-        </section>
-        <section id="main">
-            <div class="container">
-
-                <article id="sidebar">
-                    <img src="../WEB DESIGN SCHOOL/img/html.jpg" alt="" width="100%">
-                    <p>Welcome to Soltani Webby's HTML section!</p>
-                    <p> Navigate through the essentials of HTML using the sidebar menu on the left.</p>
-                    <p> Explore topics such as 'What is HTML?', 'Structure of an HTML document', 'Basic HTML tags', and 'Creating headings, paragraphs, lists, and links'.</p> 
-                    <p>Each topic is designed to deepen your understanding of HTML and empower you to create dynamic web pages. Let the sidebar be your roadmap as you journey through the fundamentals of HTML. 
-                    </p><p><b>Let's dive in and uncover the magic of web design together!</b></p>
-                </article>
-                <aside id="main-col">
-                    <div class="dark">
-                    <h3 onclick="whatIsHtml()">What is HTML?</h3>
-                    <h3 onclick="structureHtml()">Structure of an HTML document</h3>
-                    <h3 onclick="htmlTags()">Basic HTML tags</h3>
-                    <h3 onclick="creating()">Creating headings, paragraphs, lists, and links</h3>
-                    <h3 onclick="exercise()">Practical exercises to reinforce learning</h3>
-                </div>
-                </aside>
-            </div>
-        </section>
-        <footer>
-            <p>
-                Soltani Webby, &copy; 2024 Mobina Soltani. All rights reserved. 
-                Unauthorized use or reproduction of materials from this website may result in legal action. 
-                Last updated: 2024
-                <br>
-                We are constantly working to make the website better and bigger. Thank you for your support!
-            </p>
-            
-                </footer>
-        <script>
-            function whatIsHtml(){
-                document.getElementById("sidebar").innerHTML = `
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Soltani Webby | HTML</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<video autoplay muted loop id="myVideo">
+			<source src="./img/background.mp4" type="video/mp4" />
+		</video>
+		<header>
+			<div class="container">
+				<div id="branding">
+					<a href="index.html"
+						><h1><span class="highlight">Soltani</span> Webby</h1></a
+					>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li class="current"><a href="html.html">HTML</a></li>
+						<li><a href="css.html">CSS</a></li>
+						<li><a href="js.html">JAVASCRIPT</a></li>
+						<li><a href="examples.html" target="_blank">DEMO</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section id="newsletter">
+			<div class="container">
+				<h1>Subscribe To Our Newsletter</h1>
+				<form>
+					<input type="email" placeholder="Enter Your Email" />
+					<button type="submit" class="button-1">subscribe</button>
+				</form>
+			</div>
+		</section>
+		<section id="main">
+			<div class="container">
+				<article id="sidebar">
+					<img src="../WEB DESIGN SCHOOL/img/html.jpg" alt="" width="100%" />
+					<p>Welcome to Soltani Webby's HTML section!</p>
+					<p>
+						Navigate through the essentials of HTML using the sidebar menu on
+						the left.
+					</p>
+					<p>
+						Explore topics such as 'What is HTML?', 'Structure of an HTML
+						document', 'Basic HTML tags', and 'Creating headings, paragraphs,
+						lists, and links'.
+					</p>
+					<p>
+						Each topic is designed to deepen your understanding of HTML and
+						empower you to create dynamic web pages. Let the sidebar be your
+						roadmap as you journey through the fundamentals of HTML.
+					</p>
+					<p>
+						<b>Let's dive in and uncover the magic of web design together!</b>
+					</p>
+				</article>
+				<aside id="main-col">
+					<div class="dark">
+						<h3 onclick="whatIsHtml()">What is HTML?</h3>
+						<h3 onclick="structureHtml()">Structure of an HTML document</h3>
+						<h3 onclick="htmlTags()">Basic HTML tags</h3>
+						<h3 onclick="creating()">
+							Creating headings, paragraphs, lists, and links
+						</h3>
+						<h3 onclick="exercise()">
+							Practical exercises to reinforce learning
+						</h3>
+					</div>
+				</aside>
+			</div>
+		</section>
+		<footer>
+			<p>
+				Soltani Webby, &copy; 2024 Mobina Soltani. All rights reserved.
+				Unauthorized use or reproduction of materials from this website may
+				result in legal action. Last updated: 2024
+				<br />
+				We are constantly working to make the website better and bigger. Thank
+				you for your support!
+			</p>
+		</footer>
+		<script>
+			function whatIsHtml() {
+				document.getElementById("sidebar").innerHTML = `
     <h4><strong>What is HTML?</strong></h4>
     <p>HTML, or HyperText Markup Language, is the standard markup language used to create and structure web pages on the World Wide Web. It serves as the backbone of web development, providing a framework for organizing and presenting content in a structured and semantically meaningful way.</p>
     <h5>Key Points:</h5>
@@ -84,9 +100,9 @@
     <p>In summary, HTML is the foundation of the web, enabling developers to create structured and accessible web pages that communicate effectively with users and search engines alike. Understanding HTML is essential for anyone looking to pursue a career in web development or create their own websites.</p>
     <img src="./img/ex.png" alt="" width="750px">
                     <img src="./img/ex2h.png" alt="" width="750px">`;
-            };
-            function structureHtml(){
-                document.getElementById("sidebar").innerHTML = `
+			}
+			function structureHtml() {
+				document.getElementById("sidebar").innerHTML = `
         <h4><strong>Structure of an HTML Document:</strong></h4>
         <p>An HTML document consists of several main elements, including <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;title&gt;</code>, and <code>&lt;body&gt;</code>.</p>
         <ul>
@@ -111,9 +127,10 @@
     <p>Here's a complete example of the structure of an HTML document:</p>
     <br>
         <img src="../WEB DESIGN SCHOOL/img/overall.png" alt="" width="700px">
-`;}
-            function creating(){
-                document.getElementById("sidebar").innerHTML = `
+`;
+			}
+			function creating() {
+				document.getElementById("sidebar").innerHTML = `
                 <h4><strong>Introducing Common HTML Tags:</strong></h4>
     <ul>
         <li><strong>Heading Tags (h1 - h6)</strong>: The <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags are used in HTML to define headings of different levels. These tags are crucial for organizing content hierarchically and enhancing its readability. The <code>&lt;h1&gt;</code> tag represents the highest level heading, typically reserved for the main title of a page. Subsequent headings, such as <code>&lt;h2&gt;</code> to <code>&lt;h6&gt;</code>, denote decreasing levels of importance, with <code>&lt;h2&gt;</code> often used for major sections and <code>&lt;h6&gt;</code> for minor subsections. Proper use of heading tags not only improves the accessibility and usability of web pages but also aids search engines in understanding the structure and relevance of the content. It's essential to use heading tags semantically and avoid skipping levels to maintain consistency and clarity in web page design.
@@ -155,10 +172,9 @@
     <p>The <code>&lt;a&gt;</code> tag is versatile and can be used for various purposes, such as linking to other web pages, creating email links, or linking to specific sections within the same page using anchor links.</li>
     </ul>
 `;
-
-            }
-            function htmlTags(){
-                document.getElementById("sidebar").innerHTML = `
+			}
+			function htmlTags() {
+				document.getElementById("sidebar").innerHTML = `
     <h4><strong>Basic HTML tags:</strong></h4>
       <p>HTML, the HyperText Markup Language, employs a variety of tags to structure and organize content within web pages. Among the most common tags are:</p> headings, <code>&lt;p&gt;</code> for paragraphs, <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> for unordered and ordered lists, and <code>&lt;a&gt;</code> for links.</p>
     <p><i>Explainations on how to use these tags to structure and organize content on a web page are in the next section of the course</i></p>
@@ -171,10 +187,9 @@
     <p>
     <img src="./img/code44.png" alt="" width="700px">
 `;
-
-            }
-            function exercise(){
-                document.getElementById("sidebar").innerHTML=`
+			}
+			function exercise() {
+				document.getElementById("sidebar").innerHTML = `
                 <h4><strong>EXERCISES: </strong></h4>
                 <ol>
                 <li>Create a simple HTML document with a heading, a paragraph describing yourself, and a list of your hobbies.
@@ -186,7 +201,7 @@
                 By practicing these exercises, you'll reinforce your understanding of HTML basics and become more comfortable with creating web pages.
                 
                 `;
-            }
-        </script>
-</body>
+			}
+		</script>
+	</body>
 </html>
