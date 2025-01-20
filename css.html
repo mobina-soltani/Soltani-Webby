@@ -1,77 +1,92 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soltani Webby | CSS</title>
-    <link rel="stylesheet" href="../WEB DESIGN SCHOOL/css/style.css">
-</head>
-<body>
-    <video autoplay muted loop id="myVideo">
-        <source src="./img/background.mp4" type="video/mp4">
-      </video>
-    <header>
-        <div class="container">
-            <div id="branding">
-                <a href="index.html"><h1><span class="highlight">Soltani</span> Webby</h1></a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="html.html">HTML</a></li>
-                    <li class="current"><a href="css.html">CSS</a></li>
-                    <li><a href="js.html">JAVASCRIPT</a></li>
-                    <li><a href="examples.html" target="_blank">DEMO</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-        <section id="newsletter">
-            <div class="container">
-                <h1>Subscribe To Our Newsletter</h1>
-                <form>
-                    <input type="email" placeholder="Enter Your Email">
-                    <button type="submit" class="button-1">
-                        subscribe
-                    </button>
-                </form>
-            </div>
-        </section>
-        <section id="main">
-            <div class="container">
-
-                <article id="sidebar">
-                    <img src="../WEB DESIGN SCHOOL/img/CSS.jpeg" alt="" width="100%">
-                    <p>Welcome to Soltani Webby's CSS section!</p>
-                    <p>Navigate through the essentials of CSS using the sidebar menu on the left.</p>
-                    <p>Explore topics such as 'Introduction to CSS', 'Inline Styles, Internal Stylesheets, and External Stylesheets', 'Selectors and Properties', 'Styling Text, Backgrounds, and Borders', and 'Box Model'.</p>
-                    <p>Each topic is designed to deepen your understanding of CSS and empower you to style and format web pages creatively. Let the sidebar be your roadmap as you journey through the fundamentals of CSS.</p>
-                    <p><b>Let's dive in and uncover the magic of web design together!</b></p>
-                </article>
-                <aside id="main-col">
-                    <div class="dark">
-                    <h3 onclick="whatIsCss()">What is CSS?</h3>
-                    <h3 onclick="styles()">Inline Styles, Internal Stylesheets, and External Stylesheets
-                    </h3>
-                    <h3 onclick="selectors()">Selectors and Properties</h3>
-                    <h3 onclick="styling()">Styling Text, Backgrounds, and Borders</h3>
-                    <h3 onclick="boxing()">Box Model</h3>
-                    
-                </div>
-                </aside>
-            </div>
-        </section>
-        <footer>
-            <p>
-                Soltani Webby, &copy; 2024 Mobina Soltani. All rights reserved. 
-                Unauthorized use or reproduction of materials from this website may result in legal action. 
-                Last updated: 2024
-                <br>
-                We are constantly working to make the website better and bigger. Thank you for your support!
-            </p>
-                </footer>
-        <script>
-            function whatIsCss(){
-                document.getElementById("sidebar").innerHTML=`
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Soltani Webby | CSS</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<video autoplay muted loop id="myVideo">
+			<source src="./img/background.mp4" type="video/mp4" />
+		</video>
+		<header>
+			<div class="container">
+				<div id="branding">
+					<a href="index.html"
+						><h1><span class="highlight">Soltani</span> Webby</h1></a
+					>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="html.html">HTML</a></li>
+						<li class="current"><a href="css.html">CSS</a></li>
+						<li><a href="js.html">JAVASCRIPT</a></li>
+						<li><a href="examples.html" target="_blank">DEMO</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section id="newsletter">
+			<div class="container">
+				<h1>Subscribe To Our Newsletter</h1>
+				<form>
+					<input type="email" placeholder="Enter Your Email" />
+					<button type="submit" class="button-1">subscribe</button>
+				</form>
+			</div>
+		</section>
+		<section id="main">
+			<div class="container">
+				<article id="sidebar">
+					<img src="../WEB DESIGN SCHOOL/img/CSS.jpeg" alt="" width="100%" />
+					<p>Welcome to Soltani Webby's CSS section!</p>
+					<p>
+						Navigate through the essentials of CSS using the sidebar menu on the
+						left.
+					</p>
+					<p>
+						Explore topics such as 'Introduction to CSS', 'Inline Styles,
+						Internal Stylesheets, and External Stylesheets', 'Selectors and
+						Properties', 'Styling Text, Backgrounds, and Borders', and 'Box
+						Model'.
+					</p>
+					<p>
+						Each topic is designed to deepen your understanding of CSS and
+						empower you to style and format web pages creatively. Let the
+						sidebar be your roadmap as you journey through the fundamentals of
+						CSS.
+					</p>
+					<p>
+						<b>Let's dive in and uncover the magic of web design together!</b>
+					</p>
+				</article>
+				<aside id="main-col">
+					<div class="dark">
+						<h3 onclick="whatIsCss()">What is CSS?</h3>
+						<h3 onclick="styles()">
+							Inline Styles, Internal Stylesheets, and External Stylesheets
+						</h3>
+						<h3 onclick="selectors()">Selectors and Properties</h3>
+						<h3 onclick="styling()">Styling Text, Backgrounds, and Borders</h3>
+						<h3 onclick="boxing()">Box Model</h3>
+					</div>
+				</aside>
+			</div>
+		</section>
+		<footer>
+			<p>
+				Soltani Webby, &copy; 2024 Mobina Soltani. All rights reserved.
+				Unauthorized use or reproduction of materials from this website may
+				result in legal action. Last updated: 2024
+				<br />
+				We are constantly working to make the website better and bigger. Thank
+				you for your support!
+			</p>
+		</footer>
+		<script>
+			function whatIsCss() {
+				document.getElementById("sidebar").innerHTML = `
                 <h4><strong>What is CSS?</strong></h4>
 
                 <p>CSS, or Cascading Style Sheets, plays a pivotal role in web development by controlling the visual presentation of HTML elements.</p>
@@ -82,9 +97,9 @@
                 <p> Overall, CSS plays a crucial role in shaping the visual identity of a website and contributes significantly to its success in attracting and retaining users.</p>
                 <img src="./img/cssex.png" alt="" width="750px">
                     <img src="./img/CSSEX2.png" alt="" width="750px">`;
-            }
-            function styles(){
-                document.getElementById("sidebar").innerHTML=`
+			}
+			function styles() {
+				document.getElementById("sidebar").innerHTML = `
                 <h4><strong>Inline Styles, Internal Stylesheets, and External Stylesheets</strong></h4>
                 <ul>
                 <li><strong>Inline Styles:</strong>
@@ -115,9 +130,9 @@
                 </li>  
                 </ul>
                 `;
-            }
-            function selectors(){
-                document.getElementById("sidebar").innerHTML=`
+			}
+			function selectors() {
+				document.getElementById("sidebar").innerHTML = `
                 <h4><strong>Selectors and Properties</strong></h4>
                 <p>CSS selectors are patterns used to select and style HTML elements on a web page, while properties define how selected elements should appear. By combining selectors and properties, developers can precisely control the visual presentation of HTML elements.</p>
                 <br>
@@ -155,9 +170,9 @@
                 In this example, we use tag name, class, and ID selectors to target HTML elements (
                 div, p, span) and apply styling properties (color, font-size, margin, background-color) to them. The CSS selectors and properties work together to style the HTML elements according to the defined rules. This demonstrates how selectors and properties combine to achieve desired visual effects on web pages.
                 `;
-            }
-            function styling(){
-                document.getElementById("sidebar").innerHTML=`
+			}
+			function styling() {
+				document.getElementById("sidebar").innerHTML = `
                 <h4><strong>Styling Text, Backgrounds, and Borders</strong></h4>
                 <ol>
                 <li><strong>Styling Text Elements:</strong>
@@ -189,9 +204,9 @@
                 <img src="./img/ill2show.png" alt="" width="800">
                 
                 `;
-            }
-            function boxing(){
-                document.getElementById("sidebar").innerHTML=`
+			}
+			function boxing() {
+				document.getElementById("sidebar").innerHTML = `
                 <h4><strong>Box Model</strong></h4>
                 <p>The box model is a fundamental concept in CSS that describes how elements are rendered on a web page as rectangular boxes with distinct components: content, padding, border, and margin.</p>
                 <ul>
@@ -213,7 +228,7 @@
                 <img src="./img/BOX.png" alt="" width="750px">
             <img src="./img/BOXX.png" alt="" width="750px">
                 `;
-            }
-        </script>
-</body>
+			}
+		</script>
+	</body>
 </html>
